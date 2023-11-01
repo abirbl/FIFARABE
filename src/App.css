@@ -1,0 +1,325 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora&display=swap');
+
+:root{
+  --col1: #4D0961;
+  --col2: #5d4066;
+  --col3: #D4B259;
+  --col4: #fcb045;
+  --col5: #E2E1DD;
+  --col6: #ABAAA7;
+  --col7: #1F759C;
+  --col8: #131313;
+  --col9: rgb(116, 114, 114);
+}
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Lora', serif;
+  background-color: transparent;
+}
+body {
+  text-align: center;
+  background: var(--col1);
+}
+
+/*  NAVBAR  */
+.header1{
+  background: var(--col9);
+  display: flex;
+  align-items: center;
+  align-items: center;
+  padding: 1rem 5%;
+  box-shadow: 4px 3px 6px var(--col6);
+  margin-bottom: 0px;
+}
+.header1 .navbar{
+  display: flex;
+  margin-right: 15px;
+}
+.header1 .navbar a {
+  font-size: 1.2rem;
+  color: #fff;
+  display:inline-flex;
+  margin: 0 1rem;
+}
+.header1 .navbar a:hover {
+  color: var(--col2);
+} 
+img{
+  width: 50px;
+}
+.logo .lodo{
+  text-align: center;
+  justify-content: center;
+  background: linear-gradient(to top,var(--col3), var(--col4));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; 
+  font-size: 30px;
+  margin-left: 5px;
+  margin-right: 500px;
+}
+.logo .lodo .aaa, .logo .lodo .fff{
+  background: linear-gradient(to top,var(--col2), var(--col1));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; 
+}
+/* TRANSLATE PART */
+.app_translate{
+  margin: 0;
+  background-color: /*#ABAAA7var(--col1)*/var(--col1);
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  padding: 0 10px;
+  min-height: 60vh;
+}
+.container{
+  min-width: 700px;
+  align-items: center;
+  justify-content: center;
+  width: 70%;
+  padding: 30px;
+  background:var(--col3);
+  border-radius: 7px;
+}
+.wrapper{
+  width: auto;
+  background-color: var(--col3);
+  display: grid;
+  grid-template: auto / auto auto;
+  height: auto;
+  resize: none;
+  grid-gap: 10px;
+}
+.text-input .textarea, .text-result .textarea{
+  height: 250px;
+  width: 300px;
+  resize: none !important;
+  outline: none !important;
+}
+.textarea{
+  box-shadow: 5px 6px 5px rgb(0,0,0,0.8);
+  border-width: 3px;
+  border-style: solid;
+  margin-left: 70px;
+  border-image: linear-gradient(45deg,var(--col1),var(--col2),var(--col1),var(--col2) ) 1;
+  background:transparent;
+  text-transform: none;
+}
+.ara{
+  margin-left: 80px;
+  color: var(--col1);
+}
+.textarea::placeholder{
+  font-family: 'Lora', serif;
+}
+.translator{
+  justify-content: center;
+  align-items: center;
+}
+
+/*   ABOUT PART */
+.about {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+  background-color: #4D0961;
+  padding: 20px;
+  height: 800px;
+}
+.about .image-container {
+  box-flex: 1;
+  flex: 1 1 42rem;
+}
+.about .image-container .image {
+border-radius: 1rem;
+width: 400px;
+height: 400px;
+}
+.about .image-container .controls {
+text-align: center;
+padding: 2rem 0;
+}
+.about .image-container .controls span {
+display: inline-block;
+height: 2rem;
+width: 2rem;
+border-radius: 50%;
+background: #fff;
+cursor: pointer;
+margin: .7rem;
+}
+.about .image-container .controls span:hover {
+background: var(--col5);
+}
+.about .content {
+  box-flex: 1;
+  flex: 1 1 42rem;
+  margin-bottom: 5rem;
+}
+.about .content span {
+color: var(--col5);
+font-size: 2rem;
+}
+.about .content h3 {
+color: #fff;
+font-size: 4rem;
+margin-top: .5rem;
+}
+.about .content p {
+padding: 1rem 0;
+font-size: 1.4rem;
+color: #fff;
+line-height: 2;
+}
+.about .content .btn{
+  background: linear-gradient(45deg, var(--col1),var(--col5));
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  border: 2px solid var(--light);
+}
+.about .btn:hover{
+  border: 2px solid var(--light);
+  font-size: 18px;
+  transition: all 0.3s ease;
+}
+.app {
+  background-size: cover;
+  background-position: bottom;
+  transition: 0.4 ease;
+}
+main {
+  min-height: 79vh;
+  background-image: linear-gradient(to bottom,var(--col1) 40%,var(--col3));
+  padding: 65px;
+}
+.search-box {
+  width: 100%;
+  margin: 0 0 75px;
+}
+body {
+  font-family: 'Montserrat', sans-serif;
+  color: ghostwhite;
+}
+.search-box .search-bar {
+  width: 100%;
+  padding: 15px;
+  appearance: none;
+  background: none;
+  border: none;
+  outline: none;
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 16px 16px 16px 16px;
+  margin-top: 25px;
+  margin-left: 10px;
+  margin-right: 30px;
+  box-shadow: 0px 5px rgba(0, 0, 0, 0.2);
+  color: #313131;
+  font-size: 20px;
+  transition: 0.4s ease;
+}
+.search-box .search-bar:focus {
+  background-color: rgba(255, 255, 255, 0.75);
+}
+.hey{
+  margin-left: 15px;
+  line-height: 40px;
+  font-size: 25px ;
+}
+.location-box .location {
+  color: #FFF;
+  font-size: 32px;
+  font-weight: 500;
+  text-align: center;
+  text-shadow: 3px 3px rgba(50, 50, 70, 0.5);
+}
+.location-box .date {
+  color: #FFF;
+  font-size: 20px;
+  font-weight: 300;
+  font-style: italic;
+  text-align: center;
+  text-shadow: 2px 2px rgba(50, 50, 70, 0.5);
+}
+.weather-box {
+  text-align: center;
+}
+.weather-box .temp {
+  position: relative;
+  display: inline-block;
+  margin: 40px auto;
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 16px;
+  padding: 15px 25px;
+  color: #FFF;
+  font-size: 80px;
+  font-weight: 600;
+  text-shadow: 3px 6px rgba(50, 50, 70, 0.5);
+  text-align: center;
+  box-shadow: 3px 6px rgba(0, 0, 0, 0.2);
+}
+
+/* ISLAM  */
+.main-content {
+  background-size: cover;
+  padding: 50px; 
+  background-repeat: none;
+  background-image: url('/Users/wiame/Desktop/ElFaquih/Atelier/fifa/src/components/images/islam.jpg');
+}
+.section {
+  margin: 30px 0; 
+  background-color: var(--col3); 
+  color: #fff;
+  font-family: 'Lora', serif;
+  font-size: 20px;
+  padding: 20px; 
+  border-radius: 10px; 
+}
+
+
+/*Match*/
+.bg{
+  background-color:#EEEEE3;
+}
+.imageM, .imageMA{
+  width: max-content;
+  border: 2px solid var(--col1); 
+  border-radius: 15px;
+}
+.imageM{
+  margin-top: 20px;
+  margin-bottom: 100px;
+}
+
+/* Footer CSS */
+.footer__container {
+  background-color: var(--col9);
+  padding: 2rem 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#footer__logo {
+  display: flex;
+  flex-direction: row;
+}
+#footer__name{
+  font-family: 'Lora', serif;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  font-size: 2rem;
+  text-align: center;
+}
+.website__rights {
+  color: #fff;
+  font-size: 1.25rem;
+}
+.logologo{
+  margin-top: 0px;
+  margin-bottom: -10px;
+}
